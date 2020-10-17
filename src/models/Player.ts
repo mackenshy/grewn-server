@@ -1,4 +1,3 @@
-import { Error } from 'mongoose'
 import Schema from './../lib/db/schemas/Player'
 import { IPlayer } from './../lib/db/schemas/Player'
 

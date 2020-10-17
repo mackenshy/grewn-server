@@ -4,6 +4,7 @@ import cors from 'cors'
 
 import db from './lib/db'
 import PlayerRouter from './routes/player'
+import KingdomRouter from './routes/kingdom'
 
 const app = express()
 const PORT: number = 5000
@@ -19,8 +20,8 @@ app.get('/', (req: Request, res: Response) => {
 })
 
 app.use('/players', PlayerRouter)
+app.use('/kingdoms', KingdomRouter)
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`)
 })
-
